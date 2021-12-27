@@ -5,7 +5,7 @@ module.exports = function decodeAsm (stdlib, foreign, buffer) {
 
   // -- Imports
 
-  var heap = new stdlib.Uint8Array(buffer)
+  var heap = new Uint8Array(buffer)
   // var log = foreign.log
   var pushInt = foreign.pushInt
   var pushInt32 = foreign.pushInt32
@@ -47,7 +47,7 @@ module.exports = function decodeAsm (stdlib, foreign, buffer) {
 
   var pushBreak = foreign.pushBreak
 
-  var pow = stdlib.Math.pow
+  var pow = Math.pow
 
   // -- Constants
 

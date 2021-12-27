@@ -55,7 +55,7 @@ class Decoder {
     }, opts.tags)
 
     // Initialize asm based parser
-    this.parser = parser(global, {
+    this.parser = parser(0, {
       // eslint-disable-next-line no-console
       log: console.log.bind(console),
       pushInt: this.pushInt.bind(this),
